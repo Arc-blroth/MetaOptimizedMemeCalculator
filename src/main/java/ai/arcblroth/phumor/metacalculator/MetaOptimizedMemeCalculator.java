@@ -111,7 +111,7 @@ public class MetaOptimizedMemeCalculator implements Trend {
 							BigInteger.valueOf(currentOperator).multiply(maxIntValue.multiply(BigInteger.valueOf(2)).pow(2)).add(
 									BigInteger.valueOf(first).add(maxIntValue).add(BigInteger.ONE)
 										.multiply(maxIntValue).add(BigInteger.valueOf(second).add(maxIntValue).add(BigInteger.ONE))),
-							maxIntValue.multiply(BigInteger.valueOf(2)).pow(2).multiply(BigInteger.valueOf(4))
+							maxIntValue.multiply(BigInteger.valueOf(2)).add(BigInteger.ONE).pow(2).multiply(BigInteger.valueOf(4))
 					);
 					everySecCounter = System.currentTimeMillis();
 				}
